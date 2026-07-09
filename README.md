@@ -1,19 +1,27 @@
 # FlyRank FE-01 — Frontend Assignment
 
-A frontend application built with Next.js as part of the FlyRank engineering assessment.
+A Next.js frontend application built for the FlyRank engineering assessment, demonstrating modern React patterns, component architecture, and API integration.
 
-## Overview
+## Status
 
-This project demonstrates a responsive, performant user interface following modern React best practices. The assignment focuses on component architecture, state management, and API integration.
+<!-- TODO: update once deployed -->
+Proof-of-concept / In development.
+
+## Prerequisites
+
+- **Node.js** >= 18.17
+- **pnpm** >= 8 (install via `npm install -g pnpm`)
 
 ## Tech Stack
 
-- **Framework:** Next.js 14+ (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **State Management:** React Context / Zustand
-- **HTTP Client:** Ky / Fetch API
-- **Linting:** ESLint + Prettier
+| Category          | Choice                    |
+| ----------------- | ------------------------- |
+| Framework         | Next.js 14+ (App Router)  |
+| Language          | TypeScript (strict mode)  |
+| Styling           | Tailwind CSS (utility-first) |
+| State Management  | React Context, local state |
+| HTTP Client       | Fetch API (typed wrappers) |
+| Linting / Format  | ESLint (flat config), Prettier |
 
 ## Getting Started
 
@@ -26,19 +34,44 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Scripts
 
-| Command        | Description                |
-| -------------- | -------------------------- |
-| `pnpm dev`     | Start development server   |
-| `pnpm build`   | Production build           |
-| `pnpm start`   | Start production server    |
-| `pnpm lint`    | Run ESLint                 |
-| `pnpm typecheck` | Run TypeScript checks    |
+| Command            | Description                |
+| ------------------ | -------------------------- |
+| `pnpm dev`         | Start development server   |
+| `pnpm build`       | Production build           |
+| `pnpm start`       | Start production server    |
+| `pnpm lint`        | Run ESLint                 |
+| `pnpm typecheck`   | Run TypeScript checks      |
+| `pnpm format`      | Format with Prettier       |
+
+## Project Structure
+
+```
+src/
+├── app/          # App Router pages & layouts (Route Groups, layouts)
+├── components/   # Reusable UI components (PascalCase, named exports)
+├── hooks/        # Custom React hooks
+├── lib/          # Utilities, API clients, helpers
+├── types/        # Shared TypeScript interfaces & types
+└── styles/       # Global CSS (minimal, Tailwind-driven)
+```
 
 ## Features
 
-- [ ] Feature TBD
-- [ ] Feature TBD
-- [ ] Feature TBD
+Planned areas of focus:
+
+- [ ] Responsive page layout with App Router
+- [ ] Type-safe API integration layer
+- [ ] Component composition & reusability
+- [ ] Accessible UI (keyboard nav, ARIA)
+- [ ] Error & loading states
+
+## Assignment Goals
+
+- Demonstrate clean component architecture and separation of concerns
+- Follow TypeScript strict mode conventions
+- Use Tailwind for all styling (no CSS modules)
+- Keep state management lightweight and intentional
+- Handle API errors with typed error boundaries
 
 ## License
 
